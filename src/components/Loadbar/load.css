@@ -1,0 +1,18 @@
+.bar{
+    height: 0.70vh;
+    background-color: rgb(100, 153, 21);
+    animation: loadbar 3s ease-in-out 1 forwards;
+}
+@keyframes loadbar {
+    10%{
+        width: 10%;
+    }
+    50%{
+        width: 50%;
+    }
+    100%{
+        width: 100%;
+        /* display: none; */
+    }
+    
+}

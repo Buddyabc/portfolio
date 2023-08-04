@@ -1,0 +1,105 @@
+.i{
+    display: flex;
+    height:91.3vh;
+    font-family: 'Signika Negative', sans-serif;
+}
+.i-right{
+    flex:1;
+    position: relative;
+}
+.i-left{
+    flex:1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.i-left-wrapper{
+    padding: 50px;
+    /* padding-left: 6vw; */
+    height: 65%;
+    /* background-color: aqua; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.i-name{
+    font-size: 50px;
+    /* font-size: 3.5rem; */
+    font-weight: bold;
+    /* margin: 0; */
+}
+.i-intro{
+    margin: 0px;
+}
+.i-title{
+    height: 50px;
+    /* height: 5.5vh; */
+    overflow: hidden;
+    position: relative;
+    /* margin: 0; */
+}
+.i-title-wrapper{
+    height: 100%;
+    font-size: 50px;
+    /* font-size: 5.5vh; */
+    animation: updown 4s ease-in-out infinite alternate;
+}
+@keyframes updown {
+    33%{
+         transform: translateY(-50px);
+         /* transform: translateY(-5vh); */
+    }
+    66%{
+         transform: translateY(-100px);
+         /* transform: translateY(-10vh); */
+    }
+    100%{
+         transform: translateY(-150px);
+         /* transform: translateY(-15vh); */
+    }
+}
+.i-title-item{
+    font-size: 30px;
+    /* font-size: 5vh; */
+    height:50px;
+    /* height:5.5vh; */
+    font-weight: bold;
+    color: rgb(100, 153, 21);
+    display:flex;
+    align-items: center;  
+}
+.port-img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    /* object-fit: cover; */
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+.i-bg{
+    clip-path: polygon(100% 0%, 100% 49%, 100% 100%, 25% 100%, 0% 50%, 25% 0%);
+    background-color: rgb(100, 153, 21);
+    /* background-color: rgb(60, 60, 187); */
+
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+@media screen and (max-width:772px){
+    .i{
+        flex-direction: column;
+    }
+    .i-left-wrapper{
+        padding:10px;
+        align-items:center;
+        justify-content: center;
+        text-align: center;
+        height: 100%;
+    }
+    /* .i-desc{
+        display:none;
+    } */
+}
